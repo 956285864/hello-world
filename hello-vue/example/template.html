@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>template</title>
+    <script src="../assets/js/vue.js" type="text/javascript"></script>
+</head>
+<body>
+    <h1>template</h1>
+    <hr>
+    <div id="app">
+        {{messsage}}
+    </div>
+    <!-- <template id="dd2">
+        <h2 style='color:green'>我是Template标签模板</h2>
+    </template> -->
+    <script type="x-template" id="dd3" src="">
+        <h2 style='color:yellow'>我是Script标签模板</h2>
+    </script>
+    <script typa="text/javascript">
+        var app=new Vue({
+            el:"#app ",
+            data:{
+                messsage:"hello world!"
+            },
+            template:"#dd3"
+            // template:`
+            //     <h2 style='color:red'>我是选项模板</h2>
+            // `
+        })
+    </script>
+</body> 
+</html>
